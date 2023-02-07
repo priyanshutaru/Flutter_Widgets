@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:testing/about.dart';
 import 'package:testing/drawersubmenu.dart';
 import 'package:testing/dropdown.dart';
+import 'package:testing/form.dart';
 import 'package:testing/grid.dart';
 import 'package:testing/like.dart';
 import 'package:testing/newtest.dart';
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: MyReview(),
+      home: MyForm1(),
     );
   }
 }
