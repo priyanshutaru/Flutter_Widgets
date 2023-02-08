@@ -8,8 +8,10 @@ import 'package:testing/drawersubmenu.dart';
 import 'package:testing/dropdown.dart';
 import 'package:testing/form.dart';
 import 'package:testing/grid.dart';
+import 'package:testing/inputbox.dart';
 import 'package:testing/like.dart';
 import 'package:testing/listviewwithtext.dart';
+import 'package:testing/location.dart';
 import 'package:testing/newtest.dart';
 import 'package:testing/price.dart';
 import 'package:testing/review.dart';
@@ -47,7 +49,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: MyAutoScrollistView(),
+      home: SearchBoxMy(),
     );
   }
 }
