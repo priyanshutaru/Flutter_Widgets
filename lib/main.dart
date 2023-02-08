@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:testing/about.dart';
+import 'package:testing/dottedline.dart';
 import 'package:testing/drawersubmenu.dart';
 import 'package:testing/dropdown.dart';
 import 'package:testing/form.dart';
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: ViewDeatils(),
+      home: DrawerVenue(),
     );
   }
 }
