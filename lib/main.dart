@@ -2,12 +2,14 @@
 
 import 'package:flutter/material.dart';
 import 'package:testing/about.dart';
+import 'package:testing/autoscrolllistview.dart';
 import 'package:testing/dottedline.dart';
 import 'package:testing/drawersubmenu.dart';
 import 'package:testing/dropdown.dart';
 import 'package:testing/form.dart';
 import 'package:testing/grid.dart';
 import 'package:testing/like.dart';
+import 'package:testing/listviewwithtext.dart';
 import 'package:testing/newtest.dart';
 import 'package:testing/price.dart';
 import 'package:testing/review.dart';
@@ -16,6 +18,15 @@ import 'package:testing/slider.dart';
 import 'package:testing/stack.dart';
 import 'package:testing/subvenu.dart';
 import 'package:testing/venue.dart';
+import 'package:testing/venue_band.dart';
+import 'package:testing/venue_catring.dart';
+import 'package:testing/venue_choreography.dart';
+import 'package:testing/venue_cinematography.dart';
+import 'package:testing/venue_dj.dart';
+import 'package:testing/venue_mahandi.dart';
+import 'package:testing/venue_makeup.dart';
+import 'package:testing/venue_photographer.dart';
+import 'package:testing/venue_planner.dart';
 import 'package:testing/viewdetails.dart';
 
 import 'home.dart';
@@ -36,7 +47,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: DrawerVenue(),
+      home: MyAutoScrollistView(),
     );
   }
 }

@@ -3,14 +3,14 @@
 import 'package:flutter/material.dart';
 import 'package:dotted_line/dotted_line.dart';
 
-class DrawerVenue extends StatefulWidget {
-  const DrawerVenue({super.key});
+class DrawerVendorVenue extends StatefulWidget {
+  const DrawerVendorVenue({super.key});
 
   @override
-  State<DrawerVenue> createState() => _DrawerVenueState();
+  State<DrawerVendorVenue> createState() => _DrawerVendorVenueState();
 }
 
-class _DrawerVenueState extends State<DrawerVenue> {
+class _DrawerVendorVenueState extends State<DrawerVendorVenue> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
