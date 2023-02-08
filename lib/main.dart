@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
 import 'package:testing/about.dart';
 import 'package:testing/drawersubmenu.dart';
@@ -8,10 +10,12 @@ import 'package:testing/like.dart';
 import 'package:testing/newtest.dart';
 import 'package:testing/price.dart';
 import 'package:testing/review.dart';
+import 'package:testing/search_filter_card.dart';
 import 'package:testing/slider.dart';
 import 'package:testing/stack.dart';
 import 'package:testing/subvenu.dart';
 import 'package:testing/venue.dart';
+import 'package:testing/viewdetails.dart';
 
 import 'home.dart';
 
@@ -31,7 +35,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: MyForm1(),
+      home: ViewDeatils(),
     );
   }
 }
