@@ -52,7 +52,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: SubMenuExplor(),
+      home: MyForm1(),
     );
   }
 }
