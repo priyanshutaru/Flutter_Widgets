@@ -33,6 +33,7 @@ import 'package:testing/venue_makeup.dart';
 import 'package:testing/venue_photographer.dart';
 import 'package:testing/venue_planner.dart';
 import 'package:testing/viewdetails.dart';
+import 'package:testing/why.dart';
 
 import 'home.dart';
 
@@ -52,7 +53,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: MyForm1(),
+      home: WhyWedArranger(),
     );
   }
 }
