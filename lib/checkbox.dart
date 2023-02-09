@@ -10,108 +10,273 @@ class MycheckBox extends StatefulWidget {
 }
 
 class _MycheckBoxState extends State<MycheckBox> {
+  double curent_valu = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //backgroundColor: Colors.black12,
       appBar: AppBar(
-        title: const Text("Checkbox"),
+        title: const Text("Filter Here"),
       ),
-      body: Column(
-        children: [
-          Container(
-            height: 40,
-            width: 400,
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(14.0),
+              child: Container(
+                height: 40,
+                width: 420,
 
-            // ignore: sort_child_properties_last
-            child: Padding(
-              padding: const EdgeInsets.all(4.0),
-              child: Text(
-                "By Category",
-                style:
-                    TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                // ignore: sort_child_properties_last
+                child: Padding(
+                  padding: const EdgeInsets.all(4.0),
+                  child: Text(
+                    "By Price",
+                    style: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.bold),
+                  ),
+                ),
+                decoration: BoxDecoration(color: Colors.black26),
+                //color: Colors.redAccent,
               ),
             ),
-            decoration: BoxDecoration(color: Colors.black26),
-            //color: Colors.redAccent,
-          ),
-          Row(
+            Padding(
+              padding: const EdgeInsets.all(18.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
+                    curent_valu.toString(),
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black),
+                  ),
+                  Slider(
+                      value: curent_valu,
+                      min: 0,
+                      max: 100000,
+                      divisions: 100,
+                      //label: curent_valu.toString(),
+                      activeColor: Colors.green,
+                      inactiveColor: Colors.red,
+                      onChanged: (value) {
+                        setState(() {
+                          curent_valu = value;
+                        });
+                      }),
+                ],
+              ),
+            ),
+            Container(
+              height: 40,
+              width: 420,
+
+              // ignore: sort_child_properties_last
+              child: Padding(
+                padding: const EdgeInsets.all(4.0),
+                child: Text(
+                  "By Category",
+                  style: TextStyle(
+                      color: Colors.black, fontWeight: FontWeight.bold),
+                ),
+              ),
+              decoration: BoxDecoration(color: Colors.black26),
+              //color: Colors.redAccent,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                // ignore: prefer_const_literals_to_create_immutables
+                children: [
+                  MyStatefulWidget(),
+                  Text("Band"),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                // ignore: prefer_const_literals_to_create_immutables
+                children: [
+                  MyStatefulWidget(),
+                  Text("Catering"),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                // ignore: prefer_const_literals_to_create_immutables
+                children: [
+                  MyStatefulWidget(),
+                  Text("Cinematography"),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                // ignore: prefer_const_literals_to_create_immutables
+                children: [
+                  MyStatefulWidget(),
+                  Text("Decorators"),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                // ignore: prefer_const_literals_to_create_immutables
+                children: [
+                  MyStatefulWidget(),
+                  Text("Launge"),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                // ignore: prefer_const_literals_to_create_immutables
+                children: [
+                  MyStatefulWidget(),
+                  Text("Make-up Artist"),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                // ignore: prefer_const_literals_to_create_immutables
+                children: [
+                  MyStatefulWidget(),
+                  Text("Mehandi Artist"),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                // ignore: prefer_const_literals_to_create_immutables
+                children: [
+                  MyStatefulWidget(),
+                  Text("Photographer"),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                // ignore: prefer_const_literals_to_create_immutables
+                children: [
+                  MyStatefulWidget(),
+                  Text("Venue"),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                // ignore: prefer_const_literals_to_create_immutables
+                children: [
+                  MyStatefulWidget(),
+                  Text("Wedding Choreography"),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                // ignore: prefer_const_literals_to_create_immutables
+                children: [
+                  MyStatefulWidget(),
+                  Text("Wedding Planner"),
+                ],
+              ),
+            ),
+            Container(
+              height: 40,
+              width: 420,
+
+              // ignore: sort_child_properties_last
+              child: Padding(
+                padding: const EdgeInsets.all(4.0),
+                child: Text(
+                  "Rate Here..",
+                  style: TextStyle(
+                      color: Colors.black, fontWeight: FontWeight.bold),
+                ),
+              ),
+              decoration: BoxDecoration(color: Colors.black26),
+              //color: Colors.redAccent,
+            ),
+            SizedBox(
+              height: 10,
+            ),
             // ignore: prefer_const_literals_to_create_immutables
-            children: [
-              MyStatefulWidget(),
-              Text("Band"),
-            ],
-          ),
-          Row(
-            // ignore: prefer_const_literals_to_create_immutables
-            children: [
-              MyStatefulWidget(),
-              Text("Catering"),
-            ],
-          ),
-          Row(
-            // ignore: prefer_const_literals_to_create_immutables
-            children: [
-              MyStatefulWidget(),
-              Text("Cinematography"),
-            ],
-          ),
-          Row(
-            // ignore: prefer_const_literals_to_create_immutables
-            children: [
-              MyStatefulWidget(),
-              Text("Decorators"),
-            ],
-          ),
-          Row(
-            // ignore: prefer_const_literals_to_create_immutables
-            children: [
-              MyStatefulWidget(),
-              Text("Launge"),
-            ],
-          ),
-          Row(
-            // ignore: prefer_const_literals_to_create_immutables
-            children: [
-              MyStatefulWidget(),
-              Text("Make-up Artist"),
-            ],
-          ),
-          Row(
-            // ignore: prefer_const_literals_to_create_immutables
-            children: [
-              MyStatefulWidget(),
-              Text("Mehandi Artist"),
-            ],
-          ),
-          Row(
-            // ignore: prefer_const_literals_to_create_immutables
-            children: [
-              MyStatefulWidget(),
-              Text("Photographer"),
-            ],
-          ),
-          Row(
-            // ignore: prefer_const_literals_to_create_immutables
-            children: [
-              MyStatefulWidget(),
-              Text("Venue"),
-            ],
-          ),
-          Row(
-            // ignore: prefer_const_literals_to_create_immutables
-            children: [
-              MyStatefulWidget(),
-              Text("Wedding Choreography"),
-            ],
-          ),
-          Row(
-            // ignore: prefer_const_literals_to_create_immutables
-            children: [
-              MyStatefulWidget(),
-              Text("Wedding Planner"),
-            ],
-          ),
-        ],
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 25),
+              child: Row(
+                // ignore: prefer_const_literals_to_create_immutables
+                children: [
+                  Icon(Icons.star,color: Colors.yellow[900],),
+                  MyStatefulWidget(),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 25),
+              child: Row(
+                // ignore: prefer_const_literals_to_create_immutables
+                children: [
+                  Icon(Icons.star,color: Colors.yellow[900],),
+                  Icon(Icons.star,color: Colors.yellow[900],),
+                  MyStatefulWidget(),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 25),
+              child: Row(
+                // ignore: prefer_const_literals_to_create_immutables
+                children: [
+                  Icon(Icons.star,color: Colors.yellow[900],),
+                  Icon(Icons.star,color: Colors.yellow[900],),
+                  Icon(Icons.star,color: Colors.yellow[900],),
+                  MyStatefulWidget(),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 25),
+              child: Row(
+                // ignore: prefer_const_literals_to_create_immutables
+                children: [
+                  Icon(Icons.star,color: Colors.yellow[900],),
+                  Icon(Icons.star,color: Colors.yellow[900],),
+                  Icon(Icons.star,color: Colors.yellow[900],),
+                  Icon(Icons.star,color: Colors.yellow[900],),
+                  MyStatefulWidget(),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 25),
+              child: Row(
+                // ignore: prefer_const_literals_to_create_immutables
+                children: [
+                  Icon(Icons.star,color: Colors.yellow[900],),
+                  Icon(Icons.star,color: Colors.yellow[900],),
+                  Icon(Icons.star,color: Colors.yellow[900],),
+                  Icon(Icons.star,color: Colors.yellow[900],),
+                  Icon(Icons.star,color: Colors.yellow[900]),
+                  MyStatefulWidget(),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

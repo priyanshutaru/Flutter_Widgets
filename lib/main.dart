@@ -14,6 +14,7 @@ import 'package:testing/like.dart';
 import 'package:testing/listviewwithtext.dart';
 import 'package:testing/location.dart';
 import 'package:testing/newtest.dart';
+import 'package:testing/nextgridview.dart';
 import 'package:testing/price.dart';
 import 'package:testing/review.dart';
 import 'package:testing/search_filter_card.dart';
@@ -50,7 +51,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: MycheckBox(),
+      home: RowColumnGRidView(),
     );
   }
 }
