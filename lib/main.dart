@@ -7,6 +7,7 @@ import 'package:testing/checkbox.dart';
 import 'package:testing/dottedline.dart';
 import 'package:testing/drawersubmenu.dart';
 import 'package:testing/dropdown.dart';
+import 'package:testing/explorsubmenu.dart';
 import 'package:testing/form.dart';
 import 'package:testing/grid.dart';
 import 'package:testing/inputbox.dart';
@@ -51,7 +52,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: RowColumnGRidView(),
+      home: SubMenuExplor(),
     );
   }
 }

@@ -24,18 +24,19 @@ class _RowColumnGRidViewState extends State<RowColumnGRidView> {
             decoration: BoxDecoration(
               image: DecorationImage(
                   image: NetworkImage(
-                      "https://wedarranger.com/images/main-banner1.jpg"),
-                  fit: BoxFit.fill),
+                      "https://wedarranger.com/wed_vendor/upload/DSC_6598.JPG"),
+                  fit: BoxFit.cover),
             ),
-            child: Center(
-              child: Text(
-                "Plan Your Wedding Online",
-                style: TextStyle(
-                    fontSize: 25,
-                    color: Colors.black,
-                    background: Paint()..color = Colors.white12),
-              ),
-            ),
+            // child: Center(
+            //   child: Text(
+            //     "Plan Your Wedding Online",
+            //     style: TextStyle(
+            //         fontSize: 25,
+            //         color: Colors.white,
+            //         // background: Paint()..color = Colors.black54
+            //         ),
+            //   ),
+            // ),
           ),
           Row(
             children: [
